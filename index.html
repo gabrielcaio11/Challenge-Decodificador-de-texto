@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Decodificador de Texto</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <main class="apresentacao">
+
+        <section class="apresentacao__central">
+
+
+            <textarea class="apresentacao__central__textarea__input" placeholder="Digite seu texto"></textarea>
+            <div  class="apresentacao__central__principal">
+                <div class="apresentacao__central__aviso">
+                    <img class="apresentacao__central__aviso__icone" src="img/aviso.png" alt="">
+                    <p class="apresentacao__central__aviso__texto">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="apresentacao__central__botoes">
+                    <button class="apresentacao__central__botoes__criptografar"
+                        onclick="pegarInput()">Criptografar</button>
+                    <button class="apresentacao__central__botoes__descriptografar"
+                        onclick="pegarInputCriptografado()">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="conteudo-lateral">
+
+            <div class="conteudo-lateral__resultado">
+                <img class="conteudo-lateral__imagem" src="img/imagem.png"
+                    alt="Imagem de uma pessoa procurando alguma coisa com uma lupa">
+
+                <section class="conteudo-lateral__resultado__mensagem">
+                    <p class="conteudo-lateral__paragrafo__1">Nenhuma mensagem <br>encontrada</p>
+                    <p class="conteudo-lateral__paragrafo__2">Digite um texto que você deseja <br>criptografar ou
+                        descriptografar.
+                    </p>
+                </section>
+            </div>
+            <p id="conteudo-lateral__resultado-texto"></p>
+            <button id="btn__copiar" class="botao__copiar">copiar</button>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p>Desenvolvido por Gabriel Caio</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
